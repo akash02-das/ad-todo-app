@@ -13,6 +13,7 @@ body {
 
 header {
     font-size: 1.5rem;
+    color: #018E42;
 }
 
 header,
@@ -46,4 +47,60 @@ form button {
     border-bottom-right-radius: 5px;
     cursor: pointer;
     color: #192e50;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: #fff;
+    color: #192e50;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.check-btn,
+.trash-btn {
+    background: #fff;
+    color: #d9534f;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.check-btn:focus,
+.trash-btn:focus {
+    outline: 0;
+}
+
+.check-btn {
+    color: #5cb85c;
+    padding: 10px;
+}
+
+.trash-btn {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.todo-item {
+    padding: 0 15px;
 }
