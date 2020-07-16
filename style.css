@@ -17,32 +17,32 @@ header {
 }
 
 header,
-form {
+.input-container {
     min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-form input,
-form button {
+.input-container input,
+.input-container button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
     background: #fff;
 }
 
-form input:focus,
-form button:focus {
+.input-container input:focus,
+.input-container button:focus {
     outline: 0;
 }
 
-form input {
+.input-container input {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-form button {
+.input-container button {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
@@ -50,7 +50,7 @@ form button {
     transition: all 0.5s ease;
 }
 
-form button:hover {
+.input-container button:hover {
     background: #018E42;
     color: #fff;
 }
