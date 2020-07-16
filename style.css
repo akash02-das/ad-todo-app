@@ -46,7 +46,13 @@ form button {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
-    color: #192e50;
+    color: #018E42;
+    transition: all 0.5s ease;
+}
+
+form button:hover {
+    background: #018E42;
+    color: #fff;
 }
 
 .todo-container {
@@ -69,6 +75,7 @@ form button {
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
+    transition: all 0.5s ease;
 }
 
 .todo li {
@@ -103,4 +110,59 @@ form button {
 
 .todo-item {
     padding: 0 15px;
+}
+
+.fa-trash-alt,
+.fa-check-circle {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+select {
+    color: #192e50;
+    width: 12rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #018E42;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    pointer-events: none;
+    font-size: 1.2rem;
+    transition: all 0.5s ease;
+}
+
+.select:hover::after {
+    background: #fff;
+    color: #018E42;
 }
